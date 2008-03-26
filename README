@@ -18,7 +18,7 @@ class Something < ActiveResource::Base
   
 end
 
-Calls to Something.find(1) will now generate http://an-app.com/somethings rather than http://an-app.com/somethings.xml
+Calls to Something.find(:all) will now generate http://an-app.com/somethings rather than http://an-app.com/somethings.xml
 
 
 Copyright (c) 2008 [David Smalley], released under the MIT license
