@@ -1,0 +1,24 @@
+ExtensionlessFormat
+===================
+
+A plugin written by David Smalley from Litmus (http://litmusapp.com) to help us to interface with RESTful XML webservices
+that don't support the .xml extension added by ActiveResource by default.
+
+This plugin so far just defines the :xml_no_extension format to use in your ActiveResource models.
+
+
+Example
+=======
+
+class Something < ActiveResource::Base
+  
+  self.site = "http://someone:password@an-app.com"
+  self.prefix = "/api/"
+  self.format = :xml_no_extension
+  
+end
+
+Calls to Something.find(1) will now generate http://an-app.com/somethings rather than http://an-app.com/somethings.xml
+
+
+Copyright (c) 2008 [David Smalley], released under the MIT license
