@@ -1,8 +1,8 @@
 ExtensionlessFormat
 ===================
 
-A plugin written by David Smalley from Litmus (http://litmusapp.com) to help us to interface with RESTful XML webservices
-that don't support the .xml extension added by ActiveResource by default.
+A plugin written by David Smalley from Litmus (http://litmusapp.com) to help us interface with RESTful XML 
+webservices that don't support the .xml extension added by ActiveResource as default.
 
 This plugin so far just defines the :xml_no_extension format to use in your ActiveResource models.
 
